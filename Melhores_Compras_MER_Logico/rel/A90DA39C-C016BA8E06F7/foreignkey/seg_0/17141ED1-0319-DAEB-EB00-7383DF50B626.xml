@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="17141ED1-0319-DAEB-EB00-7383DF50B626" containerWithKeyObject="9A6D6A6A-83BC-914E-253C-E8F17B408FC5" localFKIndex="73D4F3E0-4B54-BDB0-EEEE-C551BFEDE27F" name="FK_MC_END_FUNC">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>CEB0BD81-673E-91D2-BFA3-DCE6FE8090FF</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<referredTableLongName>MC_FUNCIONARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>222B7265-91A4-F66D-DEC9-0C915B833EEA</referredTableID>
+<keyObject>DA96A370-433A-3442-6FED-767CDFFAAA65</keyObject>
+<referredKeyID>DA96A370-433A-3442-6FED-767CDFFAAA65</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_FUNCIONARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

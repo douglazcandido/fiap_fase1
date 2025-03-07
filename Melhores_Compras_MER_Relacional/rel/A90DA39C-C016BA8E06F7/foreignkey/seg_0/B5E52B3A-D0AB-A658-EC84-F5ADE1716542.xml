@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B5E52B3A-D0AB-A658-EC84-F5ADE1716542" containerWithKeyObject="9A6D6A6A-83BC-914E-253C-E8F17B408FC5" localFKIndex="F47A8836-0AB5-1CA1-D5E9-E7508B2A4FBD" name="FK_MC_END_FUNC_LOGRADOURO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>69D9A21C-3186-44D5-E99D-EC165E5ACAD4</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<referredTableLongName>MC_LOGRADOURO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FCB4100C-DA8A-3C05-76E5-7CE90EC0A777</referredTableID>
+<keyObject>FA2F3E21-AB31-6E8E-FFCD-2006E67F8D53</keyObject>
+<referredKeyID>FA2F3E21-AB31-6E8E-FFCD-2006E67F8D53</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_LOGRADOURO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

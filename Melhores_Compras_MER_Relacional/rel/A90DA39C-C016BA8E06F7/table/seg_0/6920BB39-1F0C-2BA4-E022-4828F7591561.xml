@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6920BB39-1F0C-2BA4-E022-4828F7591561" name="MC_SGV_VIDEO_DO_PRODUTO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>2C4FE501-63A3-1087-1C85-39FFF544FA29</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_PRODUTO" id="324E596B-ED60-B538-DA01-0A76E2C7C7DB">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[chave estrangeira (FK) referenciando CD_PRODUTO da tabela MC_PRODUTO. Campo obrigatório pois todo vídeo deve pertencer a um produto específico.]]></commentInRDBMS>
+<generatorID>69C8849D-7FF6-3085-981A-7765DCA99BF4</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0894AA3F-6097-7F04-D170-3BDFB9972117" referredColumn="7A58B2C7-057E-CE92-D5BF-A7BDF37E4A50"/>
+</associations>
+</Column>
+<Column name="ST_VIDEO" id="AB3A5804-0D77-B44D-E671-6697EF495527">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[O atributo STATUS aceita apenas os valores 'A' (Ativo) ou 'I' (Inativo).
+Vídeos que estão inativos não podem ser visualizados. Armazenado como um único caractere sempre em maiúsculas. 
+
+Máscara de dados: A ou I.]]></commentInRDBMS>
+<generatorID>595EA724-8E1A-3A88-7E27-6CD949932C80</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CADASTRO" id="02B45A46-4B30-D7EC-FC48-5EF11BCCBF08">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de cadastro do vídeo, indicando quando o vídeo foi registrado no sistema.
+O campo DT_CADASTRO será preenchido automaticamente com a data e hora em que o vídeo foi cadastrado.
+
+Formato: DD/MM/YYYY.]]></commentInRDBMS>
+<generatorID>0199F7AD-92A4-7FFC-BD89-C87D2E35A856</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_CATEGORIA_VID" id="7F6E4DB1-D736-C2B6-469F-9628143257B9">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referênciando o relacionamento com a entidade MC_SGV_CATEGORIA_VIDEO. Todos os vídeos devem pertencer a uma categória, que por sua vez possui um código único associado a mesma.]]></commentInRDBMS>
+<generatorID>5F9BEDE0-83C5-85F8-DFA7-01E3ECCEF951</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5357FA5-6342-E16F-FB3B-CEB18C2BA331" referredColumn="27C7B47A-692A-CF07-9DFF-D2C2121051D2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24200308-D427-C00F-DF26-4658E2CB8EF7" name="MC_SGV_VIDEO_DO_PRODUTO_PK">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>F46015FF-F9D6-7473-48E6-B064356C175D</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="324E596B-ED60-B538-DA01-0A76E2C7C7DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83A8C520-5378-671D-B076-D2A56593DCB9" name="Relation_13">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>89DA9AFB-4DA7-7501-AA30-4A9632ACFF3E</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="324E596B-ED60-B538-DA01-0A76E2C7C7DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B38F45FC-8790-5FDC-B07D-12B1B4D47DDD" name="Relation_31">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>8F9E7D69-95AE-6CA2-631E-1F38FF2D974E</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F6E4DB1-D736-C2B6-469F-9628143257B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

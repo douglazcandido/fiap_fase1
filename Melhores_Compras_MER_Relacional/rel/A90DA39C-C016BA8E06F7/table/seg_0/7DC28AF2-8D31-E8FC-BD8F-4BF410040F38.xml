@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DC28AF2-8D31-E8FC-BD8F-4BF410040F38" name="MC_SGV_CATEGORIA_VIDEO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>44582B6E-BF04-5999-3771-B39F4EB1428E</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_CATEGORIA_VID" id="27C7B47A-692A-CF07-9DFF-D2C2121051D2">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primária e única, cada vídeo deve estar associado a uma categoria que por sua vez terá um código único associado a ela.]]></commentInRDBMS>
+<generatorID>9FD00BAD-ABA9-C478-B6B2-6D26B6DFF652</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CATEGORIA_VID" id="AF6D1BF7-FB56-B175-19EB-C7F05AF06F17">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Deve ser preenchida obrigatoriamente com o tipo de vídeo (ex: Vídeo de instalação de produto, uso no cotidiano, comercial com personalidade, etc.)]]></commentInRDBMS>
+<generatorID>1D508975-0BBF-61F2-705B-3FD0DC574DE2</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_CATEGORIA_VID" id="6CC17ECC-453D-0983-A4EA-FE10824A8AC0">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Classifica se é uma categoria ativa ou inativa, só pode ser preenchida com A = ativa ou I = inativa.]]></commentInRDBMS>
+<generatorID>719262F0-4B41-2CB4-BF26-DA130A5A0E22</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27912322-86DD-3D48-2A76-5761B544175B" name="MC_SGV_CATEGORIA_VIDEO_PK">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>DAC78F0B-9594-E397-1124-F641EC6CD22D</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27C7B47A-692A-CF07-9DFF-D2C2121051D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

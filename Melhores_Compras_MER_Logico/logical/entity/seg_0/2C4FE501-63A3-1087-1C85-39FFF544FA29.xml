@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2C4FE501-63A3-1087-1C85-39FFF544FA29" name="MC_SGV_VIDEO_DO_PRODUTO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 00:42:13 UTC</createdTime>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="4552BB87-419E-F206-A550-E8A8B6FA3A26" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_PRODUTO" id="69C8849D-7FF6-3085-981A-7765DCA99BF4">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 17:26:20 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[chave estrangeira (FK) referenciando CD_PRODUTO da tabela MC_PRODUTO. Campo obrigatório pois todo vídeo deve pertencer a um produto específico.]]></commentInRDBMS>
+<generatorID>89DA9AFB-4DA7-7501-AA30-4A9632ACFF3E</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="4552BB87-419E-F206-A550-E8A8B6FA3A26" value="true"/>
+</engineerTo>
+<referedAttribute>2D0729E2-3896-A8CB-8ECB-8D20F972A898</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_VIDEO" id="595EA724-8E1A-3A88-7E27-6CD949932C80">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 01:02:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[O atributo STATUS aceita apenas os valores 'A' (Ativo) ou 'I' (Inativo).
+Vídeos que estão inativos não podem ser visualizados. Armazenado como um único caractere sempre em maiúsculas. 
+
+Máscara de dados: A ou I.]]></commentInRDBMS>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="4552BB87-419E-F206-A550-E8A8B6FA3A26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CADASTRO" id="0199F7AD-92A4-7FFC-BD89-C87D2E35A856">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 02:00:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de cadastro do vídeo, indicando quando o vídeo foi registrado no sistema.
+O campo DT_CADASTRO será preenchido automaticamente com a data e hora em que o vídeo foi cadastrado.
+
+Formato: DD/MM/YYYY.]]></commentInRDBMS>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="4552BB87-419E-F206-A550-E8A8B6FA3A26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_CATEGORIA_VID" id="5F9BEDE0-83C5-85F8-DFA7-01E3ECCEF951">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 19:17:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referênciando o relacionamento com a entidade MC_SGV_CATEGORIA_VIDEO. Todos os vídeos devem pertencer a uma categória, que por sua vez possui um código único associado a mesma.]]></commentInRDBMS>
+<generatorID>8F9E7D69-95AE-6CA2-631E-1F38FF2D974E</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="4552BB87-419E-F206-A550-E8A8B6FA3A26" value="true"/>
+</engineerTo>
+<referedAttribute>9FD00BAD-ABA9-C478-B6B2-6D26B6DFF652</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F46015FF-F9D6-7473-48E6-B064356C175D" name="MC_SGV_VIDEO_DO_PRODUTO PK">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 17:26:42 UTC</createdTime>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="4552BB87-419E-F206-A550-E8A8B6FA3A26" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>69C8849D-7FF6-3085-981A-7765DCA99BF4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

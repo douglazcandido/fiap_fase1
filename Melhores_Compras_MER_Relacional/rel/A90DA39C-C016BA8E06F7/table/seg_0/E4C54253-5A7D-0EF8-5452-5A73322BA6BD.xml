@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4C54253-5A7D-0EF8-5452-5A73322BA6BD" name="MC_ESTADO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>5CCE66CC-C2B8-D3A6-3A7B-03F672E94531</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SG_ESTADO" id="7EA2CFFB-BEA3-A005-9BA6-6317AABEA245">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>64441550-5420-E5D9-A018-CA0653E6B836</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_ESTADO" id="8B7ED8E5-975A-1079-ECC7-EFA047692E0E">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do estado]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do estado]]></commentInRDBMS>
+<generatorID>894E6416-E2F1-3F9C-124D-6A0C15A90BFB</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE201690-B598-9A4E-C0D3-FCF3FB829CB6" name="MC_ESTADO_PK">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7EA2CFFB-BEA3-A005-9BA6-6317AABEA245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41183D0E-5B0A-6D51-E2DC-9CFD88EBECFA" name="MC_ESTADO_SG_ESTADO_UN">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>B6A6C670-4C8F-81E8-773E-19838B8D0738</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Relacional</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EA2CFFB-BEA3-A005-9BA6-6317AABEA245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

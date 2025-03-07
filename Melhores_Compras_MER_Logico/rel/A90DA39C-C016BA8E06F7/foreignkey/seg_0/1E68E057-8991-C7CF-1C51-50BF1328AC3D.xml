@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1E68E057-8991-C7CF-1C51-50BF1328AC3D" containerWithKeyObject="AC26ECEB-5E7C-14C9-A768-276BBA78BE28" localFKIndex="0080EC1E-1A40-65FF-B4B1-21F5E6A8562F" name="Relation_15">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Vídeos com STATUS 'I' (Inativo) não podem ser visualizados.
+]]></comment>
+<generatorID>CCFA6609-6152-3D11-66D0-7057A7A4945A</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<referredTableLongName>MC_SGV_VIDEO_DO_PRODUTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6920BB39-1F0C-2BA4-E022-4828F7591561</referredTableID>
+<keyObject>24200308-D427-C00F-DF26-4658E2CB8EF7</keyObject>
+<referredKeyID>24200308-D427-C00F-DF26-4658E2CB8EF7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_PRODUTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="177A033A-9282-0424-5B74-E02E85402A1B" name="MC_SGV_VISUALIZACAO_DO_VIDEO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 00:46:12 UTC</createdTime>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_VISUALIZAÇÃO" id="E6B1C092-E3BE-3FB8-E3D1-46A000E2C9DA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 02:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da visualização de um vídeo na plataforma. Deve ser único e não nulo.
+
+Importante: O CD_VISUALIZACAO será gerado automaticamente como um número sequencial crescente. Deve ser implementado no modelo físico usando uma SEQUENCE.
+]]></commentInRDBMS>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_VISITA" id="F1274D04-5952-1407-D688-8DD08BF571F9">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 02:06:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preencher com data e hora da visita feita pelo internauta.
+
+No formato: DD-MM-YYYY, HH:MM:SS.]]></commentInRDBMS>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_PRODUTO" id="D79E2C70-4C57-4F5C-53F0-DCCD0B015F9F">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 17:26:43 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Todo vídeo possui uma associação com um produto específico, portanto serve de referência (FK) a qual produto o vídeo se refere.]]></commentInRDBMS>
+<generatorID>CCFA6609-6152-3D11-66D0-7057A7A4945A</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>69C8849D-7FF6-3085-981A-7765DCA99BF4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CLIENTE" id="CF32BFA3-117D-772D-A23E-5A929C91039D">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 17:40:51 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Necessário para indicar qual cliente (logado) realizou a visualização do vídeo em questão, para armazenar essa informação. Caso seja um usuário anônimo (não tem login na plataforma), não é necessário armazenar informação.
+]]></commentInRDBMS>
+<generatorID>5051A131-EE38-A0ED-5B15-8C0C0799E6BE</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>F401F00A-70F8-1181-69A0-320FD1410045</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="971E831B-1C1E-8C98-DCC3-75A3C7DA28A4" name="MC_SGV_VISUALIZACAO_DO_VIDEO PK">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 02:09:46 UTC</createdTime>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6B1C092-E3BE-3FB8-E3D1-46A000E2C9DA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

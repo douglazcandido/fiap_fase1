@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D947FCDF-50D3-34DF-835B-E54F4AAB1434" name="MC_CLI_FISICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>65122254-E0C9-7DEA-1B3C-C53EA9DA98C8</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NR_CLIENTE" id="372212DF-4276-D215-4219-57D5E17230CC">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:57:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></commentInRDBMS>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2DA242C2-B397-59C7-CD3B-CECFE24352C3" referredColumn="490F56F6-B874-2300-4484-4003A79A2673"/>
+</associations>
+</Column>
+<Column name="DT_NASCIMENTO" id="2FEC297D-2982-D894-B3C4-5AAF9DE88E2D">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<generatorID>0305579E-B32B-9891-EC79-16A76FA2A433</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FL_SEXO_BIOLOGICO" id="B2F26C74-0A88-E2FF-2BD6-83027DA92CB4">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. Podendo ser preenchido apenas com os valores: (M) Masculino, (F) Feminino ou (H) Hemafrodita. Sempre em letras maiúsculas. ]]></commentInRDBMS>
+<generatorID>910B54C9-5D75-2FE5-6065-609ADFF4445C</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_GENERO" id="2035BCA7-1316-A79B-8364-3EEB7E212B65">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Genero de nascimento do Cliente. Seu conteúdo deve ser opcional.]]></commentInRDBMS>
+<generatorID>E4BF8006-D359-6826-1EDE-0F141B08ADFF</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CPF" id="EA9F0E6F-0BA3-C0D4-5EE5-94D44C642A0A">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<generatorID>19BF6853-0578-6B01-0FDC-30646E7AC9E5</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="882B7D6C-6085-EBB7-C995-C3431DF0C4C4" name="MC_CLI_FISICA_PK">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>E4A30097-BA52-563C-858A-2D0306E9AA5C</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="372212DF-4276-D215-4219-57D5E17230CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98709F5A-E3DD-CDB8-7023-06822158D9F7" name="MC_CLI_FISICA__IDX">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5EC00AE6-8E51-04F4-FD48-84D35930182E</relationGeneratorID>
+</ind_PK_UK>
+<ind_PK_UK id="E00D396B-25A4-0699-DCB4-9556FE1295AF" name="FK_MC_CLIENTE_FISICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-07 22:45:27 UTC</createdTime>
+<generatorID>5EC00AE6-8E51-04F4-FD48-84D35930182E</generatorID>
+<ownerDesignName>Melhores_Compras_MER_Logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="372212DF-4276-D215-4219-57D5E17230CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
