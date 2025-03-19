@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CAT_MC_PROD" directorySegmentName="seg_0" id="8E6CB9BE-8184-00F8-83A9-AD0D0559E72C">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:22:15 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<sourcePk>88E87611-8BA0-EEFB-3D32-A7941D2F92D3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A9D4A024-0175-C4A3-9624-3254CBFA3B53</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>564526E6-9CE0-D03F-CD10-EE14A5EC0E29</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

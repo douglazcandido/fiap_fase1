@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B32CF72B-89F9-B858-B3F6-6E17B511ED47" name="MC_DEPTO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>03CCA421-BAC6-5967-5091-BB423AC97255</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_DEPTO" id="A3494C53-161F-01FB-AE5B-A710ABB6A6BE">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>7DDFB79F-4F6B-CE1D-7854-241305D04174</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_DEPTO" id="5007909F-446E-05F8-9449-DD8D833856F1">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do  departamento  e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do  departamento  e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>810FEE3E-0F96-EA07-D693-280FF778FF08</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_DEPTO" id="C88FAC36-B20C-6F70-4713-6959DC8BDBE8">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o status do  departamento  e seu conteúdo é obrigatório. Os valores possíveis são: (A)tivo e (I)nativo.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o status do  departamento  e seu conteúdo é obrigatório. Os valores possíveis são: (A)tivo e (I)nativo.]]></commentInRDBMS>
+<generatorID>000DC660-212A-494E-0869-E449FBFE0D84</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FC5D89F-FA50-AA12-4F75-68AD821E6798" name="PK_MC_DEPTO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>21B1B0FA-F25C-D400-890A-697F015AA06C</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3494C53-161F-01FB-AE5B-A710ABB6A6BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

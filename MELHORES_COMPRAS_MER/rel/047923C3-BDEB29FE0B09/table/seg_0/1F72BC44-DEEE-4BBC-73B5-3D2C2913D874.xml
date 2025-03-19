@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F72BC44-DEEE-4BBC-73B5-3D2C2913D874" name="MC_CLI_FISICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>65122254-E0C9-7DEA-1B3C-C53EA9DA98C8</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NR_CPF" id="07533BAF-5BF8-713B-561C-9918FE2143A1">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<generatorID>19BF6853-0578-6B01-0FDC-30646E7AC9E5</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CLIENTE" id="DFAD1FF0-591A-41A2-93CA-0FFD964B34B4">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></commentInRDBMS>
+<generatorID>2DC8E6DC-3E66-A740-5348-212C4E2C72DE</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+<associations>
+<colAssociation fkAssociation="9C203D09-44BD-29E4-FBA2-9F0458843DB4" referredColumn="C4274682-A7BD-AD4F-4410-F7C565978D00"/>
+</associations>
+</Column>
+<Column name="DT_NASCIMENTO" id="89E32367-FA43-3C6D-26AF-72B8614ADEA3">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<generatorID>0305579E-B32B-9891-EC79-16A76FA2A433</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FL_SEXO_BIOLOGICO" id="F3AA6069-0564-AD1A-172C-983296FC8643">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.. ]]></commentInRDBMS>
+<generatorID>910B54C9-5D75-2FE5-6065-609ADFF4445C</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_GENERO" id="742066D4-2AC5-BA8F-BB2A-16567C1D0AC2">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>E4BF8006-D359-6826-1EDE-0F141B08ADFF</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31DE1D4C-ECDF-CEB8-801B-CBBA227DAB76" name="PK_MC_CLI_FISICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>01C6F766-9038-A703-525F-550D5E29CFC6</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07533BAF-5BF8-713B-561C-9918FE2143A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9824CA53-51EB-A806-7E6A-66B8342F945F" name="MC_CLI_FISICA__IDX">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5EC00AE6-8E51-04F4-FD48-84D35930182E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DFAD1FF0-591A-41A2-93CA-0FFD964B34B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F6119A0-F725-A760-E5BD-133677516781" name="MC_CLI_FISICA__IDXv1">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 23:48:44 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5EC00AE6-8E51-04F4-FD48-84D35930182E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DFAD1FF0-591A-41A2-93CA-0FFD964B34B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C53A60E3-40B1-8286-850E-B908101FC3AE" name="FK_MC_CLIENTE_FISICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>5EC00AE6-8E51-04F4-FD48-84D35930182E</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFAD1FF0-591A-41A2-93CA-0FFD964B34B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

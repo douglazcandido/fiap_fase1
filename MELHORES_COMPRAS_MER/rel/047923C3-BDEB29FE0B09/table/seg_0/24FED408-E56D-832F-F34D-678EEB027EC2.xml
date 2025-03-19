@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24FED408-E56D-832F-F34D-678EEB027EC2" name="MC_SGV_VID_PROD">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>06505BA2-5FB4-77C2-AC07-343030969FF3</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_VID_PROD" id="B27D0AA6-E5F5-D9F2-0520-4DCBDF0367B8">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código identificador do vídeo do produto, será a PK da entidade e deve ser único e gerado via identity crescente.]]></commentInRDBMS>
+<generatorID>1D1F242A-8527-2670-F9AA-008E70E5820C</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_PRODUTO" id="13B8BEC0-93D8-38B8-423C-EAD4E9E4AF15">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Código de produto que indica a que produto o vídeo é associado]]></commentInRDBMS>
+<generatorID>FEAF2A03-210A-A9FB-405F-39851D074FCE</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="823DE6B7-3A6E-385A-A3E6-3106FAA054CB" referredColumn="D99D9178-65D3-67D7-FC46-FD4847FAA066"/>
+</associations>
+</Column>
+<Column name="CD_CAT_VIDEO" id="D94312BF-7573-EA3B-F38A-2A69A30CB15F">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 23:48:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cada vídeo deve obrigatóriamente estar alocado em uma categoria.]]></commentInRDBMS>
+<generatorID>4A45B1B9-3084-D059-A169-4557955FD9E8</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="538C6654-4A2F-5D30-01A3-C4FA7DA59EA4" referredColumn="F4436A6A-E394-EEC8-A60C-A39F8AF93C64"/>
+</associations>
+</Column>
+<Column name="DT_CADASTRO" id="14E42207-7E83-EA11-513D-21DF0AE00FBF">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de cadastro do vídeo na plataforma, deve ser obrigatório e no modelo: DD/MM/YYYY.]]></commentInRDBMS>
+<generatorID>82883E67-0B9D-7159-A566-9342E02490AB</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_VIDEO_PROD" id="35486CC9-10E8-6EC8-276F-E629BB2037E6">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica qual o status do vídeo na plataforma, ele pode ser uma das duas seguintes opções: A(tivo) ou (I)nativo.]]></commentInRDBMS>
+<generatorID>89A6FA52-53B8-E0DA-763E-C74AC329D29F</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAE5C60C-2EAF-8D24-85CD-391A6423EC28" name="PK_MC_SGV_VID_PROD">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>25929556-4D5F-634C-B812-7B7F93F901EC</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B27D0AA6-E5F5-D9F2-0520-4DCBDF0367B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AC7ADD8-B729-EF58-8B81-CAA92BB42BA6" name="FK_MC_PRODUTO_VIDEO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>B40E5D51-64EB-43CA-4E37-0A9E0AB7CEC6</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13B8BEC0-93D8-38B8-423C-EAD4E9E4AF15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A6882D4-B7FA-A482-6EA1-F04643E46E72" name="FK_MC_SGV_VID_PROD">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 23:48:44 UTC</createdTime>
+<generatorID>7247DDAC-F28C-4F39-8FDE-150275BF156E</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D94312BF-7573-EA3B-F38A-2A69A30CB15F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_CLIENTE_FISICA" directorySegmentName="seg_0" id="5EC00AE6-8E51-04F4-FD48-84D35930182E">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<generatorID>147717CD-18B0-2F3C-6FEF-A935C9708543</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<sourcePk>03297169-C9DD-49E1-C7C9-0FA3AC5BCDF6</sourcePk>
+<arc>BF453FE9-04C2-5420-A236-218B2E438028</arc>
+<dominantRole>732D0B08-C537-849B-F93F-5A55B2186B75</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>732D0B08-C537-849B-F93F-5A55B2186B75</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>65122254-E0C9-7DEA-1B3C-C53EA9DA98C8</targetEntity>
+<transferable>true</transferable>
+</Relation>

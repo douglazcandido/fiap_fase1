@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6D2C323-E4C6-50C3-8B62-A913774AEBDC" name="MC_PRODUTO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>564526E6-9CE0-D03F-CD10-EE14A5EC0E29</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_PRODUTO" id="D99D9178-65D3-67D7-FC46-FD4847FAA066">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhores Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></commentInRDBMS>
+<generatorID>2D0729E2-3896-A8CB-8ECB-8D20F972A898</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_CATEGORIA" id="36465399-B6C1-C2CF-7B83-AE2C210AAFFD">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  será acionada a Sequence  SQ_MC_CATEGORIA que se encarregará de gerar o próximo número único da categoria..]]></comment>
+<commentInRDBMS><![CDATA[Indica a qual categoria o produto pertence, obrigatório.]]></commentInRDBMS>
+<generatorID>45126D7F-202E-6311-F78F-5E60C4139F31</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17FC6992-DE1C-1B46-7533-0C4CD9E641F6" referredColumn="9B0F6D0E-D94D-E8C1-1CDD-7C65D12BCEEA"/>
+</associations>
+</Column>
+<Column name="DS_PRODUTO" id="B1299C6A-D225-75CB-64CF-06829BFFE87B">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a descrição principal do produto. Seu conteúdo deve ser  obrigatorio.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a descrição principal do produto. Seu conteúdo deve ser  obrigatorio.]]></commentInRDBMS>
+<generatorID>192AF864-D032-E0D7-F5BD-CE4453A88C9A</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_COMPLETA_PROD" id="AF0DB454-761C-0D8E-43E3-4D13363BCB5E">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a descrição completa do produto. Seu conteúdo deve ser  obrigatorio.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a descrição completa do produto. Seu conteúdo deve ser  obrigatorio.]]></commentInRDBMS>
+<generatorID>4847524F-1D66-41FC-A768-F74B0D7300F2</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CD_BARRAS_PROD" id="17E1EBEB-F9F3-C0E6-157C-D354416E7702">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o número do codigo de barras  do produto. Seu conteúdo deve ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o número do codigo de barras  do produto. Seu conteúdo deve ser opcional.]]></commentInRDBMS>
+<generatorID>AE65232E-9C24-EF90-3D89-DC1D826664C9</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_UNITARIO" id="F4140C12-57EE-493E-4BB7-BFD4CF5F2256">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o valor unitário do produto. Seu conteúdo deve ser > 0 ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o valor unitário do produto. Seu conteúdo deve ser > 0 ]]></commentInRDBMS>
+<generatorID>6602F16E-B6BA-58C0-1664-D8D87AD7EFCF</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_EMBALAGEM" id="CE7F2513-39D5-5280-1385-8CCA0A173609">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o tipo de embalagem do produto. Seu conteúdo pode ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o tipo de embalagem do produto. Seu conteúdo pode ser opcional.]]></commentInRDBMS>
+<generatorID>61786F27-FC21-89C7-1053-04500DEC5CE0</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_PRODUTO" id="E08159FC-B8D9-0476-B44D-3E3D3E734A0E">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o stauts do produto da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o stauts do produto da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></commentInRDBMS>
+<generatorID>7942A8CA-B300-1E5F-2701-C3E994D45C7A</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_PERC_LUCRO" id="2F385A28-3D9E-BF6B-CB54-21BE386D0B6D">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o percentual  do lucro médio para cada produto. Seu conteúdo deve ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o percentual  do lucro médio para cada produto. Seu conteúdo deve ser opcional.]]></commentInRDBMS>
+<generatorID>0A3D1DC8-1302-B869-D492-9B226065A791</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73328462-1788-2197-D129-CB1F8A5B648C" name="PK_MC_PRODUTO">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>52864ABF-7521-340C-9881-17347D3D13C0</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D99D9178-65D3-67D7-FC46-FD4847FAA066"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1022D1D6-AA5B-A054-62D4-5FB3A51276C5" name="UN_DS_PROD">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 05:13:35 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1299C6A-D225-75CB-64CF-06829BFFE87B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3ABF043B-110B-5638-0A54-16832C785BB6" name="UN_DS_COMP_PROD">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 05:14:03 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF0DB454-761C-0D8E-43E3-4D13363BCB5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69E5FE47-3575-FFD4-FB76-C01D8E0AEAA2" name="FK_CAT_MC_PROD">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>8E6CB9BE-8184-00F8-83A9-AD0D0559E72C</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36465399-B6C1-C2CF-7B83-AE2C210AAFFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

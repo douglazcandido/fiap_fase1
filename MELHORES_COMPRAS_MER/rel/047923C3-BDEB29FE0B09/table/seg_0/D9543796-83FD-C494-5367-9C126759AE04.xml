@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9543796-83FD-C494-5367-9C126759AE04" name="MC_SGV_VISU_VID">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>FA0EDB32-8CCE-8189-F732-907C618E1FEA</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_VISUALIZACAO" id="06534CF7-2D2A-B82D-1C7C-179509D89DFE">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único gerado através da visualização feita por um usuário logado, criado a partir de uma IDENTITY. Sequencial e inteiro.]]></commentInRDBMS>
+<generatorID>4C9524C0-D41B-48FD-86B0-862460D95B08</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_VID_PROD" id="08DC298C-9094-99E4-95DC-A714CAB0C978">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica qual vídeo foi assistido pelo cliente da Melhores Compras]]></commentInRDBMS>
+<generatorID>4D38834A-9689-C800-7F27-2610A5D0C5FC</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5BED384F-1D10-C0B3-59BE-AA8A789ECBEE" referredColumn="B27D0AA6-E5F5-D9F2-0520-4DCBDF0367B8"/>
+</associations>
+</Column>
+<Column name="NR_CLIENTE" id="A16C385E-C69E-9586-337F-7A47FFF66CFB">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Indica qual o código do cliente que visualizou o vídeo.]]></commentInRDBMS>
+<generatorID>0C071711-A915-DC50-C495-33A5DACDFF2F</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CCF356B2-AD88-737B-DFE9-0E2A70ECC073" referredColumn="C4274682-A7BD-AD4F-4410-F7C565978D00"/>
+</associations>
+</Column>
+<Column name="DT_HR_VISU" id="76EB000F-A9F7-5F99-36B2-50D7B22F36D5">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp gerado através da data e hora da visualização. No formato: DD/MM/YYYY e HH/MM/SS]]></commentInRDBMS>
+<generatorID>C45BEA4B-2310-CD26-389C-74BED3BFD705</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9371093D-3B25-1E92-F032-71181AC0E04D" name="PK_MC_SGV_VISU_VID">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>A336EB55-0946-CA5E-F658-C0E445292060</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06534CF7-2D2A-B82D-1C7C-179509D89DFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B6BC10F-CC49-7F81-00D9-A021BD5B0E6F" name="FK_CLIENTE_VISU">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>C5E69288-3AA0-535D-1E08-3E420480F2CB</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A16C385E-C69E-9586-337F-7A47FFF66CFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8A39E93-C343-14EF-307F-FABCE4AA8CF1" name="FK_VID_VISU">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>7EE33FE9-CA98-ADA7-176B-7ADC335C9EA2</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08DC298C-9094-99E4-95DC-A714CAB0C978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="10BB34BE-92BE-657E-8127-5A653117D286" name="FK_ARCO_CLI_FISICA_JURIDICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 23:48:44 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>2E0A73FE-026D-0888-1EC3-49F4AC60439D</table>
+<discriminatorColumn>BC6049E6-2827-4CB4-D79F-F0D5D55C2D1E</discriminatorColumn>
+<fkeys>
+<fkeyID>9C203D09-44BD-29E4-FBA2-9F0458843DB4</fkeyID>
+<fkeyID>5D0349DB-0999-ABF3-88DE-E0A2DC1467F9</fkeyID>
+</fkeys>
+</FKArc>

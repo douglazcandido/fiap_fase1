@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F29BBE3-0FC9-6DB8-493E-158120054B4D" name="MC_CLI_JURIDICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>0F5720E6-647D-1DD0-16ED-3ABCC893DBDC</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NR_CNPJ" id="F3EEEDA5-0353-F93B-A3DC-A182F7F980DA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o  numero do CNPJ do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o  numero do CNPJ do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>B32D6EE5-221C-2EBE-C90D-521DD4FAB87A</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CLIENTE" id="3C187A88-633A-97BE-5E2B-184D49C5376E">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></commentInRDBMS>
+<generatorID>E4BA364F-BA3D-DD4F-50DE-195B159228C9</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D0349DB-0999-ABF3-88DE-E0A2DC1467F9" referredColumn="C4274682-A7BD-AD4F-4410-F7C565978D00"/>
+</associations>
+</Column>
+<Column name="DT_FUNDACAO" id="E8A62E82-4B5C-53DA-FE6E-FABD53096C77">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar data  de fundação do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar data  de fundação do cliente na plataforma ecommerce da Melhores Compras. Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>80FE3EB8-F7D3-3970-17A7-59AFC10280F5</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_INSCR_EST" id="D4FADBFD-0E4C-C822-2D1B-C83AF807E1C6">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o  numero da Inscrição Estadual  do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser opcional]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o  numero da Inscrição Estadual  do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser opcional]]></commentInRDBMS>
+<generatorID>EEE1228D-E025-C4C7-4026-28103F398351</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="454C9F47-4D49-EB2C-2342-0AE561731FA1" name="PK_MC_CLI_JURIDICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>50E4DF31-ED0B-888D-E08F-86040BF79798</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3EEEDA5-0353-F93B-A3DC-A182F7F980DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4933DFA-CCE3-3E3D-0550-79562BE90F2F" name="MC_CLI_JURIDICA__IDX">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>58FC6DBD-1568-629E-3AF0-983652F8EB02</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3C187A88-633A-97BE-5E2B-184D49C5376E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FB93883-1247-1472-AD1A-5CEB778DF316" name="MC_CLI_JURIDICA__IDXv3">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 23:48:44 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>58FC6DBD-1568-629E-3AF0-983652F8EB02</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3C187A88-633A-97BE-5E2B-184D49C5376E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B3A06A0-DDB0-97C8-B5D9-E3372CC14AB0" name="FK_MC_CLIENTE_JURIDICA">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>58FC6DBD-1568-629E-3AF0-983652F8EB02</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C187A88-633A-97BE-5E2B-184D49C5376E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

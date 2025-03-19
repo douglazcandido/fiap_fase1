@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_VID_VISU" directorySegmentName="seg_0" id="7EE33FE9-CA98-ADA7-176B-7ADC335C9EA2">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 03:51:19 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<sourcePk>25929556-4D5F-634C-B812-7B7F93F901EC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>06505BA2-5FB4-77C2-AC07-343030969FF3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA0EDB32-8CCE-8189-F732-907C618E1FEA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

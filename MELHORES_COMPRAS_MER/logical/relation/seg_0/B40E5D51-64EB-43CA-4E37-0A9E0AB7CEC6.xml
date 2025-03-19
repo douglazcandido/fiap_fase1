@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_PRODUTO_VIDEO" directorySegmentName="seg_0" id="B40E5D51-64EB-43CA-4E37-0A9E0AB7CEC6">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 03:53:36 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<sourcePk>52864ABF-7521-340C-9881-17347D3D13C0</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>564526E6-9CE0-D03F-CD10-EE14A5EC0E29</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>06505BA2-5FB4-77C2-AC07-343030969FF3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

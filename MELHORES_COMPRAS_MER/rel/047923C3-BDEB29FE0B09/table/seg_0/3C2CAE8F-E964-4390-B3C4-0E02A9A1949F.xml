@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C2CAE8F-E964-4390-B3C4-0E02A9A1949F" name="MC_END_CLI">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>C28640F7-29FE-FEE1-635D-DF474E5CE731</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NR_CLIENTE" id="F6238EB2-B684-5C57-7B6F-638E4E06801B">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o número do cliente e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o número do cliente e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>04946D4F-918A-9BCA-5FFC-498C206A96C5</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9733335-5CB5-6CA1-2757-81D5BB2736DD" referredColumn="C4274682-A7BD-AD4F-4410-F7C565978D00"/>
+</associations>
+</Column>
+<Column name="CD_LOGRADOURO" id="83802E8C-2E7F-E143-0231-396C1010E497">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do logradouro  do cliente e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67B47F0E-3FC5-F866-ABD4-6644A91A7792" referredColumn="F032A3ED-2129-340A-5ADC-D6C32C6B768E"/>
+</associations>
+</Column>
+<Column name="NR_END" id="CA2FD638-57D2-F941-2D4A-C53FE8371245">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></comment>
+<commentInRDBMS><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></commentInRDBMS>
+<generatorID>66FB558F-5A6D-02B8-5E1E-1A0E02A58227</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_COMPLEMENTO_END" id="3AEEECDA-870F-7FA9-85D3-B1F41847C410">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o complemento do endereço do cliente e seu conteúdo pode ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o complemento do endereço do cliente e seu conteúdo pode ser opcional.]]></commentInRDBMS>
+<generatorID>31132A99-103E-E064-E54E-52F48DE45B41</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_INICIO" id="5E63B54C-5CB1-B28C-1F5B-168328B34819">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Data de início do endereço associado ao cliente.]]></comment>
+<commentInRDBMS><![CDATA[Data de início do endereço associado ao cliente.]]></commentInRDBMS>
+<generatorID>5EAA3854-CD89-CBA8-91F9-C5069847C531</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_TERMINO" id="4332454A-D2A9-2D93-5B64-77C1EDE6144C">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Data de término do endereço associado ao cliente.]]></comment>
+<commentInRDBMS><![CDATA[Data de término do endereço associado ao cliente.]]></commentInRDBMS>
+<generatorID>0D3D5A62-3D60-0D86-CF20-42BC4410C015</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_END_CLI" id="3E88A681-C80F-B4F4-AA7F-7A83EF9BD814">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<comment><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></comment>
+<commentInRDBMS><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></commentInRDBMS>
+<generatorID>11BEFEE3-BC45-0BA8-46E4-0C549ADD2C53</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC644CC7-CDC0-CB88-63E0-9BDB5AF6BEC6" name="PK_MC_END_CLI">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:02 UTC</createdTime>
+<generatorID>95DD20B7-432F-4C99-81DB-9BF6EB70E77F</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6238EB2-B684-5C57-7B6F-638E4E06801B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F316BC5B-3FB5-4DAA-42F1-B0292D7C551E" name="FK_MC_CLIENTE_END">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>18DD719A-599E-C717-9B45-3C72459A2DF7</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6238EB2-B684-5C57-7B6F-638E4E06801B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A00B55F-A595-6BDA-5CB9-A55C1FCCFE75" name="FK_MC_LOGRADOURO_END">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:45:03 UTC</createdTime>
+<generatorID>35B0D690-800A-08C5-6864-01E6ED8E4953</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83802E8C-2E7F-E143-0231-396C1010E497"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

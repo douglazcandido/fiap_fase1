@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA0EDB32-8CCE-8189-F732-907C618E1FEA" name="MC_SGV_VISU_VID">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 03:48:34 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_VISUALIZACAO" id="4C9524C0-D41B-48FD-86B0-862460D95B08">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 03:48:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único gerado através da visualização feita por um usuário logado, criado a partir de uma IDENTITY. Sequencial e inteiro.]]></commentInRDBMS>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_VID_PROD" id="4D38834A-9689-C800-7F27-2610A5D0C5FC">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 03:51:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica qual vídeo foi assistido pelo cliente da Melhores Compras]]></commentInRDBMS>
+<generatorID>7EE33FE9-CA98-ADA7-176B-7ADC335C9EA2</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<referedAttribute>1D1F242A-8527-2670-F9AA-008E70E5820C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CLIENTE" id="0C071711-A915-DC50-C495-33A5DACDFF2F">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:41:34 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Indica qual o código do cliente que visualizou o vídeo.]]></commentInRDBMS>
+<generatorID>C5E69288-3AA0-535D-1E08-3E420480F2CB</generatorID>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F401F00A-70F8-1181-69A0-320FD1410045</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_HR_VISU" id="C45BEA4B-2310-CD26-389C-74BED3BFD705">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 03:49:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp gerado através da data e hora da visualização. No formato: DD/MM/YYYY e HH/MM/SS]]></commentInRDBMS>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A336EB55-0946-CA5E-F658-C0E445292060" name="PK_MC_SGV_VISU_VID">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 03:49:03 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4C9524C0-D41B-48FD-86B0-862460D95B08</newElementsIDs>
+<usedAttributes>
+<attributeRef>4C9524C0-D41B-48FD-86B0-862460D95B08</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

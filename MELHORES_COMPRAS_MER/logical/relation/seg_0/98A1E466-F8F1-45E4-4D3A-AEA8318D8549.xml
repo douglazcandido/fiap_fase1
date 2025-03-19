@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_FUNC_SAC" directorySegmentName="seg_0" id="98A1E466-F8F1-45E4-4D3A-AEA8318D8549">
+<createdBy>guilh</createdBy>
+<createdTime>2025-03-11 04:06:35 UTC</createdTime>
+<ownerDesignName>MELHORES_COMPRAS_MER</ownerDesignName>
+<engineerTo>
+<item key="047923C3-94E9-102D-006D-BDEB29FE0B09" value="true"/>
+</engineerTo>
+<sourcePk>834A7F2D-3485-C76C-AE7A-57E9685A6774</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6EAD1423-1BA8-F7CD-80D9-627A9600F20B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>221BA63E-3880-2E15-D3E2-66E087364C1B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
